@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Syne:wght@400;600&display=swap');
 
 *::after,
 *::before,
@@ -72,11 +72,18 @@ h2{
 
 h3{
     color: var(--secondary);
+    font-size: var(--text-large);
+    font-weight: 700;
+}
+
+.carousel-caption p{
+    color: var(--accent);
     font-size: var(--text-medium);
+    font-weight: 600;
 }
 
 /*--- HELPERS ---*/
-.container {
+.container3 {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: var(--spacing-small);
@@ -94,7 +101,7 @@ h3{
 /*--- Anuncio ---*/
 
 
-/*--- Nav Bar ---*/
+/* --- Nav Bar ---*/
 nav{
     background-color: var(--secondary);    
     position: sticky;
@@ -132,18 +139,18 @@ nav ul li a{
 
 nav ul li a:hover{
     color: var(--accent);
-    text-decoration: underline;
+    
 
 }
 
-.logo__img--fluid{
-    width: 75px;
+/* .logo__img--fluid{
+    width: 125px;
     object-fit: contain;
     margin-top: var(--spacing-xsmall);
     display: flex;
     justify-content: center;
-}
-/*--- Nav Bar ---*/
+}  */
+/*--- Nav Bar --- */
 
 
 /*--- Header ---*/
