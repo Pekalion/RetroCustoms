@@ -24,7 +24,7 @@
 
     /* Font-Family */
     --font-principal: 'DM Sans', sans-serif;
-    --font-title: 'Syne'; sans-serif;
+    --font-title: 'Syne', sans-serif;
 
     /* Font-Sizes */
     --text-xlarge: 5.2em;
@@ -143,15 +143,6 @@ nav ul li a:hover{
 
 }
 
-/* .logo__img--fluid{
-    width: 125px;
-    object-fit: contain;
-    margin-top: var(--spacing-xsmall);
-    display: flex;
-    justify-content: center;
-}  */
-/*--- Nav Bar --- */
-
 
 /*--- Header ---*/
 .encabezado__img--fluid{
@@ -220,13 +211,21 @@ input[type=text], select, textarea {
 
 
 /*--- Footer ---*/
-.pie{
+footer{
     background-color: var(--secondary);
-    text-align: center;
-    padding: 30px;
-
+    font-family: var(--font-principal);
+    font-size: var(--text-small);
 }
 
+footer p{
+    color: var(--primary);
+}
+
+footer h6{
+    font-family: var(--font-title);
+    font-size: var(--text-base);
+    color: var(--accent);
+}
 .pie__icon--sm{
     width: 48px;
 }
@@ -235,7 +234,7 @@ input[type=text], select, textarea {
 
 /*--- Box Model ---*/
 .nosotros__articulo{
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 25px auto;
     padding: 20px;

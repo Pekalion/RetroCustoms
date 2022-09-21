@@ -1,0 +1,60 @@
+//Nav Bar
+
+nav{
+    background-color: $secondary-color;    
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    ul{
+        margin: $spacing-xsmall;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            list-style: none;
+            margin-right: $spacing-xsmall;
+            a{
+                color: $primary-color;
+                text-decoration: none;
+                font-family: $font-principal;
+                font-size: $text-base;
+                &:hover{
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
+
+
+// Header
+.encabezado__img--fluid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+// Carousel
+.carousel-caption p{
+    color: $accent-color;
+    font-size: $text-medium;
+    font-weight: 600;
+}
+
+// Anuncio
+.anuncio__box--fucsia{
+    background-color: $accent-color;
+    font-size: $text-medium;
+    text-decoration: none;
+    padding: $spacing-xsmall, $spacing-small;
+    text-align: center;
+}

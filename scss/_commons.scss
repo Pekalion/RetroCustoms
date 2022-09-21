@@ -1,0 +1,79 @@
+// Colors
+$primary-color: rgba(216, 207, 199, 1);
+$secondary-color: rgba(52, 53, 63, 1);
+$accent-color: rgba(216, 49, 80, 1);
+$alternative-color: rgba(30, 140, 129, 1);
+$text-color: rgba(52, 53, 63, 1);
+
+// Font-Family
+$font-principal: 'DM Sans', sans-serif;
+$font-title: 'Syne', sans-serif;
+
+// Font-Sizes
+$text-xlarge: 5.2rem;
+$text-large: 3.6rem;
+$text-medium: 2.2rem;
+$text-base: 1.6rem;
+$text-small: 1.4rem;
+
+// Spacings
+$spacing-large: 6rem;
+$spacing-medium: 2.4rem;
+$spacing-small: 2rem;
+$spacing-xsmall: 1rem;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+
+body{
+  background-color: $primary-color;
+  font-family: $font-principal;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: $primary-color;
+  text-decoration: none;
+  font-family: $font-title;
+}
+
+h1, h2, h3, h4, h5{
+  color: $secondary-color;
+  font-family: $font-title;
+}
+
+h1{
+  color: $secondary-color;
+  font-size: $text-xlarge;
+  text-align: center;
+}
+
+h2{
+  color: $secondary-color;
+  font-size: $text-large;
+}
+
+h3{
+  color: $secondary-color;
+  font-size: $text-large;
+  font-weight: 700;
+}
+
+// HELPERS 
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: $spacing-small;
+}

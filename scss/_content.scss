@@ -1,0 +1,104 @@
+// Main Section Parragraph
+
+main section p{
+    color: $secondary-color;
+    font-family: $font-principal;
+    font-size: $text-medium;
+    line-height: $spacing-small;
+    margin: $spacing-small;
+}
+
+// Formulario
+input[type=text], select, textarea {
+    font-family: $font-principal;
+    width: 100%; 
+    padding: $spacing-small;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: $spacing-small; 
+    resize: vertical 
+    
+}
+input[type=submit] {
+    background-color: $alternative-color;
+    color: $primary-color;
+    padding: $spacing-xsmall $spacing-small;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: $alternative-color;
+      }
+
+  }
+  
+
+.container2 {
+    border-radius: 5px;
+    background-color: $primary-color;
+    padding: $spacing-small;
+
+}
+
+.iframe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: $spacing-small;
+    margin-bottom: $spacing-small;
+}
+
+
+// Nosotros Section
+
+.nosotros__articulo{
+    width: 100%;
+    height: auto;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+// Productos Section
+
+// Productos 
+
+#productos h2{
+	text-transform: uppercase;
+	font-size: $text-large;
+	text-align: center;
+	padding: $spacing-small 0;
+	margin: $spacing-small 0;
+}
+
+.galeria{
+    margin: $spacing-small;	
+    flex-wrap: wrap;
+    figure{
+        margin: 7px;
+        text-align: center;
+        flex: 1 1 clamp(300px, 30%, 400px);
+        figcaption{
+            font-size: $text-medium;
+            color: $accent-color;
+            font-family: $font-title;
+            padding: $spacing-small 0;
+        }
+        img{
+            border-radius: 5px;
+            width: 100%;
+        }
+        p.price{
+            font-size: $text-base;
+            color: $secondary-color;
+            font-family: $font-principal;
+            padding-bottom: $spacing-xsmall;          
+        }
+    }
+}
+
