@@ -1,11 +1,7 @@
 // Main Section Parragraph
 
 main section p{
-    color: $secondary-color;
-    font-family: $font-principal;
-    font-size: $text-medium;
-    line-height: $spacing-small;
-    margin: $spacing-small;
+    @include texts ($text-medium, $spacing-small, $secondary-color);
 }
 
 // Formulario
@@ -80,6 +76,7 @@ input[type=submit] {
     margin: $spacing-small;	
     flex-wrap: wrap;
     figure{
+        @include flex(column, space-evenly, center);
         margin: 7px;
         text-align: center;
         flex: 1 1 clamp(300px, 30%, 400px);
@@ -87,14 +84,14 @@ input[type=submit] {
             font-size: $text-medium;
             color: $accent-color;
             font-family: $font-title;
-            padding: $spacing-small 0;
+            padding: $spacing-small;
         }
         img{
-            border-radius: 5px;
+            border-radius: 3px;
             width: 100%;
         }
         p.price{
-            font-size: $text-base;
+            font-size: $text-medium;
             color: $secondary-color;
             font-family: $font-principal;
             padding-bottom: $spacing-xsmall;          

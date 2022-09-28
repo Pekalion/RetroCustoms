@@ -1,0 +1,45 @@
+// Mixins
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin texts ($size, $interlineado, $color) {
+    font-size: $size;
+    line-height: $interlineado;
+    color: $color;
+    margin: $spacing-small;
+    padding: $spacing-xsmall;
+    font-family: $font-principal;
+
+}
+
+
+
+
+
+
+// Extends
+
+.btn-more{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: linear-gradient(to top,$alternative-color, darkgreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+    &:hover{
+        background-color: linear-gradient(to top, darkgreen, $alternative-color);
+    }
+}
+
+.btn-rounded{
+    @extend .btn-more;
+    border-radius: 3px;
+}
+
