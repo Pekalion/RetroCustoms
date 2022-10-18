@@ -28,13 +28,15 @@
     width: 100px;
     height: 30px;
     border: none;
-    background: linear-gradient(to top,$alternative-color, darkgreen);
+    margin-bottom: $spacing-xsmall;
+    background: $alternative-color;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $primary-color;
+    transition: 0.2s;    
     &:hover{
-        background-color: linear-gradient(to top, darkgreen, $alternative-color);
+        background-color: darkgreen;
     }
 }
 

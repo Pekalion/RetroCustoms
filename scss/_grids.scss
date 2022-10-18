@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: $spacing-small;
+    gap: $spacing-xsmall;
 }
 
 .figure__img:nth-of-type(1) {
@@ -43,7 +43,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: $spacing-small;
+    gap: $spacing-xsmall;
 }
 
 .figure__img:nth-of-type(1) {

@@ -1,7 +1,7 @@
 // Main Section Parragraph
 
 main section p{
-    @include texts ($text-medium, $spacing-small, $secondary-color);
+    @include texts ($text-medium, $spacing-medium, $secondary-color);
 }
 
 // Formulario
@@ -47,18 +47,37 @@ input[type=submit] {
 }
 
 
+// Retro Customs H1
+
+.info {
+    @include flex(none, center, center);   
+    &__box{  
+        flex: 1 1 50%;                    
+        padding: $spacing-medium;        
+    }
+    &__img{
+        flex: 1 1 50%;
+    }    
+    &__description{
+        @include texts($text-medium,$spacing-big,$text-color);
+        text-align: center;
+        float: left;
+    }
+    img{                
+        max-width: 100%;                
+    }   
+}
+
 // Nosotros Section
 
 .nosotros__articulo{
     width: 100%;
     height: auto;
-    margin: 25px auto;
-    padding: 20px;
+    margin: $spacing-medium auto;
+    padding: $spacing-small;
+    text-align: center; 
 }
 
-.text-center{
-    text-align: center;
-}
 
 // Productos Section
 
@@ -73,10 +92,12 @@ input[type=submit] {
 }
 
 .galeria{
-    margin: $spacing-small;	
+    margin: $spacing-xsmall;
+    padding: $spacing-xsmall;	
     flex-wrap: wrap;
     figure{
         @include flex(column, space-evenly, center);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin: 7px;
         text-align: center;
         flex: 1 1 clamp(300px, 30%, 400px);
@@ -84,7 +105,7 @@ input[type=submit] {
             font-size: $text-medium;
             color: $accent-color;
             font-family: $font-title;
-            padding: $spacing-small;
+            padding-bottom: $spacing-xsmall;
         }
         img{
             border-radius: 3px;
@@ -99,3 +120,9 @@ input[type=submit] {
     }
 }
 
+.form {
+    @include texts ($text-base, none, none);
+    h2{
+        text-align: center;
+    }
+}
